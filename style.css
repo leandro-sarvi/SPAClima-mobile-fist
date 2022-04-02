@@ -1,0 +1,219 @@
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;/*1rem = 10px*/
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+  body{
+      font-family: 'Open Sans',sans-serif;
+      font-size: 1.6rem;
+      margin: 0;
+      background-image: url("./img/body.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      animation: taadaa 3s;
+  }
+  @keyframes taadaa { 
+    0% {
+      opacity: 0;
+    }
+  
+    100% {
+      opacity: 1;
+    }
+  }
+  /**--GLOBALES--*/
+  .contenedor{
+      max-width: 1200px;
+      margin: 0 auto;
+      width: 90%;
+      animation: taadaa 3s;
+  }
+  h1, h2, h3, h4{
+      font-family: 'PT Sans', sans-serif;
+      font-weight: lighter;
+  }
+  h1{
+      font-size: 8rem;
+      font-weight: lighter;
+      margin: 0;
+  }
+  h2{
+      font-size: 4rem;
+      margin: 0;
+      filter: blur(10%);
+  }
+  h3{
+      font-size: 3.2rem;
+  }
+  h4{
+      font-size: 1.5rem;
+  }
+  img{
+      max-width: 100%;
+  }
+  /*--UTILIDADES--*/
+  .flex{
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      margin-top: 4rem;
+      margin-bottom: 1rem;
+  }
+  .centrar-texto{
+      text-align: center;
+  }
+  .hidden{
+      display: none;
+  }
+  header{
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    animation: taadaa 3s;
+}
+/*NAV-BAR*/
+.nav-bar{
+    border-style: none;
+    color: white;
+    font-size: 2.5rem;
+    padding: 2rem;
+    background-color: rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 10px 100px 18px rgba(0,0,0,0.9);
+    animation: taadaa 3s;
+}
+.nav-bar a{
+    text-decoration: none;
+    color: white;
+    font-weight: lighter;
+}
+  /*SEARCH*/
+  .title{
+      margin:2rem;
+      margin-top: 8rem;
+  }
+  .search{
+    height: 4.5rem;
+    display: flex;
+    align-items: center;
+    margin-bottom: 8rem;
+      }
+      .search input{
+        height: 100%;
+        width: 90%;
+        border-top-left-radius: 20px;
+        border-bottom-left-radius: 20px;
+        border: solid 1px  rgb(255, 255, 255);
+        border-right: 0;
+          background: rgba(0, 0, 0, 0.7);
+          color: rgb(255, 251, 251);
+          font-size: 15px;
+          padding-left: 20px;  
+          outline: none;
+      }
+      .search input::placeholder{
+          color: white;
+      }
+      .btn-search{
+        height: 100%;
+        width: 5rem;
+        background: rgba(0, 0, 0, 0.7);
+        border-top-right-radius: 20px;
+        border-bottom-right-radius: 20px;
+        border: solid 1px rgb(255, 255, 255);
+        border-left: 0;
+        color: white;
+        cursor: pointer;
+        text-decoration: none;
+       height: 100%;
+       font-size: 1.7rem;
+       display: flex;
+       align-items: center;
+       justify-content: center;
+    }
+    .grid-card{
+        display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20px;
+  overflow-y: scroll;
+  height: 25rem;
+  border-radius: 2rem;
+  background-color: rgba(0, 0, 0, 0.7);
+  box-shadow: 0px 0px 100px 60px rgba(0,0,0,0.9);
+    }
+    .card-img{
+        height: 22rem;
+        position: relative;
+        border-radius: 2rem;
+    }
+    .card-img img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 2rem;
+    }
+    .info-city{
+        background: rgba(0, 0, 0, 0.39);
+        top: 0;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        border-radius: 2rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    /*DETAILS*/
+    .nav-bar a{
+        text-shadow: 2px 2px 2px rgba(126, 126, 126, 0.493);
+    }
+      .title-details{
+        margin-top: 8rem;
+        margin-bottom: 8rem;
+          text-align: center;
+          animation: taadaa 3s;
+      }
+      .title-details h3{
+          margin:0;
+      }
+      .weather-datails{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        animation: taadaa 3s;
+    }
+      .info-weather{
+          display: flex;
+          flex-direction: column;
+          animation: taadaa 3s;
+      }
+      .info-weather span{
+        line-height: 3.5rem;
+        color: #888;
+    }
+    .sp-details{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+    .sp-details span{
+        line-height: 3.5rem;
+    }
+      hr{
+        height:100%;
+        width:.5vw;
+        border-width:0;
+        color:#888;
+        background-color:#888;
+        margin: 0;
+       }
+       .flex h4{
+        margin: 0;
+    }
+    .hr-center{
+        padding-left: 5rem;
+    }
