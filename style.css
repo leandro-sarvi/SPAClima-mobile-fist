@@ -49,7 +49,7 @@ html {
       filter: blur(10%);
   }
   h3{
-      font-size: 3.2rem;
+      font-size: 3.5rem;
   }
   h4{
       font-size: 1.8rem;
@@ -63,7 +63,6 @@ html {
       display: flex;
       align-items: center;
       justify-content: space-around;
-      margin-top: 4rem;
       margin-bottom: 1rem;
   }
   .centrar-texto{
@@ -87,7 +86,7 @@ html {
     border-style: none;
     color: white;
     font-size: 2.5rem;
-    padding: 2rem;
+    padding: 1.5rem;
     animation: taadaa 3s;
 }
 .nav-bar a{
@@ -171,12 +170,14 @@ html {
         justify-content: center;
     }
     /*DETAILS*/
+    .fa-angle-left{
+        font-size: 3.5rem;
+    }
     .nav-bar a{
         text-shadow: 2px 2px 2px rgba(126, 126, 126, 0.493);
     }
       .title-details{
-        margin-top: 8rem;
-        margin-bottom: 6rem;
+        margin-bottom: 2rem;
           text-align: center;
           animation: taadaa 3s;
       }

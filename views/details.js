@@ -23,7 +23,7 @@ export async function details(root,query){
             <a id="back"><i class="fas fa-angle-left"></i></a>
         </nav>
         <div class="contenedor title-details">
-        <img src="http://openweathermap.org/img/wn/${data.weather[0].icon}.png" alt="" class="icon"/>
+        <img src="http://openweathermap.org/img/wn/${data.weather[0].icon}@4x.png" alt="" class="icon"/>
             <h3>${data.name}</h3>
             <span>${data.weather[0].description}</span>
         </div>
