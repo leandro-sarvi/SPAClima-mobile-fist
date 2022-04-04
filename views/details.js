@@ -20,7 +20,7 @@ export async function details(root,query){
         }else{
             root.innerHTML=`
             <nav class="contenedor nav-bar">
-            <a href="#home"><i class="fas fa-angle-left"></i></a>
+            <a id="back"><i class="fas fa-angle-left"></i></a>
         </nav>
         <div class="contenedor title-details">
         <img src="http://openweathermap.org/img/wn/${data.weather[0].icon}.png" alt="" class="icon"/>
@@ -52,7 +52,8 @@ export async function details(root,query){
         </div>
             `;
         }
-       
+        const back = document.getElementById("back");
+        back.addEventListener("click",backs);
     } catch (error) {
         
     }
@@ -60,3 +61,6 @@ export async function details(root,query){
 function celsius(kelvin){
     return Math.round(kelvin - 273.15)
     }
+function backs(){
+    history.back();
+}

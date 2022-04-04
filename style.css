@@ -12,7 +12,11 @@ html {
       background-image: url("./img/body.jpg");
       background-repeat: no-repeat;
       background-size: cover;
-      animation: taadaa 3s;
+      animation: taadaa 1s;
+  }
+  .back{
+      text-decoration: none;
+      cursor: pointer;
   }
   @keyframes taadaa { 
     0% {
@@ -182,6 +186,7 @@ html {
       .weather-datails{
         display: grid;
         grid-template-columns: repeat(3,1fr);
+        padding: 0 5rem;
         animation: taadaa 3s;
     }
       .info-weather{
@@ -191,7 +196,7 @@ html {
       }
       .info-weather span{
         line-height: 3.5rem;
-        color: #888;
+        color: rgb(255, 255, 255);
     }
     .sp-details{
         display: flex;
@@ -211,7 +216,4 @@ html {
        }
        .flex h4{
         margin: 0;
-    }
-    .hr-center{
-        padding-left: 5rem;
     }
