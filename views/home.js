@@ -4,7 +4,7 @@ export function home(root){
         <a href=""><i class="fas fa-bars"></i></a>
         </nav>
         <div class="contenedor title">
-            <h2>Hello!</h2>
+            <h2 class="neon">Hello!</h2>
             <span>Check the weather by the city</span>
         </div>
         <div class="search contenedor">
